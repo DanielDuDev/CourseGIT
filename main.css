@@ -14,3 +14,13 @@ body {
 .subtitle-style{
     color: darkmagenta;
 }
+.container {
+  border: 2px solid;
+  background-color: cornsilk;
+}
+
+.navegation {
+  font-style: oblique;
+  font-family: "Times New Roman";
+  padding: 1em;
+}
