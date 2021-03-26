@@ -3,3 +3,15 @@ aaprendienpd git
 
 demapsdaksj
 ksbjasakj
+
+comandos GIT: 
+init 
+status
+add
+config
+commit -m "mensaje"
+commit Esc + i (escribir mensaje), Esc + Shift + z+z (salir)
+log
+show 
+diff (id1) (id2) 
+reset (id) --hard(vuelve a ese commit y borra el resto), --soft (vuelve y no borra) (para volver a un estado anterior )
