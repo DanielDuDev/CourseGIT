@@ -15,38 +15,62 @@ commit Esc + i (escribir mensaje), Esc + Shift + z+z (salir)
 log
 show 
 diff (id1) (id2) 
-reset (id) --hard(vuelve a ese commit y borra el resto), --soft (vuelve y no borra) (para volver a un estado anterior )
-log --stat (permite ver los cambios específicos) (q para salir)
-checkout (id) his (archivo)
-checkout (master) his (archivo) para volver al actual
-push url (enviar al servidor remoto)
-fetch (del repositorio remoto al local, no lo lleva al directorio de trabajo, en mis archivos)
-merge (fusionar con mis archivos)
-pull (fusiona fetch y merge) 
 
+#### para volver a versiones anteriores
+reset (id) --hard(vuelve a ese commit y borra el resto), --soft (vuelve y no borra) (para volver a un estado anterior )
+
+####log
+log --stat (permite ver los cambios específicos) (q para salir)
+log --all --graph --decorate --oneline
+
+####fetch
+fetch (del repositorio remoto al local, no lo lleva al directorio de trabajo, en mis archivos)
+
+####merge
+merge (fusionar con mis archivos)
+ 
+
+####commit
 commit -am "mensaje" (hace add y commit al mismo tiempo)
 
+####branch
 branch (nombre de la nueva rama) (crea una nueva rama)
 branch -D "nombre de la rama que se quiere elimiar"
 branch -M "nombre de la rama que se quiere editat el nombre"
 
+####checkout
 checkout (nombre de la rama) (cambia a la nueva rama) [IMPORTANTE, RECORDAR QUE SE DEBE HACER COMMINT EN LA NUEVA RAMA ANTES DE REGRESAR A LA RAMA MASTER]
+checkout (id) his (archivo)
+checkout (master) his (archivo) para volver al actual
 
+####remote
 remote add (nombre remoto) url (normalmente es git remote add origin url)
 remote -v
 remote rm "name" (para elmiliar)
 remote set-url (link ssh)
 
+####pull
+pull (fusiona fetch y merge)
 pull origin master (trae del repositorio remoto tanto a mis propios archivos como a mi repositorio local)
+
+####push
 push origin master (envía todo al respositorio remoto)
+push url (enviar al servidor remoto)
+
+#### tag
+tag -a v0.1 -m "mensaje"
+git show-ref --tags 
 
 
-crear llave SSH: 
+####crear llave SSH: 
 ssh-keygen -t rsa -b 4096 -C "danydu1299@gmail.com"
 
-verificar que las llaves esten corriendo para el cifrado:
+####verificar que las llaves esten corriendo para el cifrado:
 eval $(ssh-agent -s) 
 
-agregar la llave: 
+####agregar la llave: 
 ssh-add ~/.ssh/id_rsa
+
+####crear alias para los comandos: 
+alias (nombre del alias)="comando"
 
