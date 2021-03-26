@@ -37,6 +37,9 @@ commit -am "mensaje" (hace add y commit al mismo tiempo)
 branch (nombre de la nueva rama) (crea una nueva rama)
 branch -D "nombre de la rama que se quiere elimiar"
 branch -M "nombre de la rama que se quiere editat el nombre"
+git show-branch --all
+
+gitk
 
 ####checkout
 checkout (nombre de la rama) (cambia a la nueva rama) [IMPORTANTE, RECORDAR QUE SE DEBE HACER COMMINT EN LA NUEVA RAMA ANTES DE REGRESAR A LA RAMA MASTER]
@@ -60,6 +63,7 @@ push url (enviar al servidor remoto)
 #### tag
 tag -a v0.1 -m "mensaje"
 git show-ref --tags 
+tag -d (el tag a eliminar)
 
 
 ####crear llave SSH: 
