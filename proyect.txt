@@ -25,5 +25,17 @@ pull (fusiona fetch y merge)
 
 commit -am "mensaje" (hace add y commit al mismo tiempo)
 
-branch (nombre de la nueva rama) (crea una nueva rama) 
+branch (nombre de la nueva rama) (crea una nueva rama)
+branch -D "nombre de la rama que se quiere elimiar"
+branch -M "nombre de la rama que se quiere editat el nombre"
+
 checkout (nombre de la rama) (cambia a la nueva rama) [IMPORTANTE, RECORDAR QUE SE DEBE HACER COMMINT EN LA NUEVA RAMA ANTES DE REGRESAR A LA RAMA MASTER]
+
+remote add (nombre remoto) url (normalmente es git remote add origin url)
+remote -v
+remote rm "name" (para elmiliar)
+
+pull origin master (trae del repositorio remoto tanto a mis propios archivos como a mi repositorio local)
+push origin master (envía todo al respositorio remoto)
+
+
