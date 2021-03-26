@@ -8,7 +8,8 @@ comandos GIT:
 init 
 status
 add
-config
+config -l
+config -- global user.email "nuevo correo"
 commit -m "mensaje"
 commit Esc + i (escribir mensaje), Esc + Shift + z+z (salir)
 log
@@ -34,8 +35,18 @@ checkout (nombre de la rama) (cambia a la nueva rama) [IMPORTANTE, RECORDAR QUE 
 remote add (nombre remoto) url (normalmente es git remote add origin url)
 remote -v
 remote rm "name" (para elmiliar)
+remote set-url (link ssh)
 
 pull origin master (trae del repositorio remoto tanto a mis propios archivos como a mi repositorio local)
 push origin master (envía todo al respositorio remoto)
 
+
+crear llave SSH: 
+ssh-keygen -t rsa -b 4096 -C "danydu1299@gmail.com"
+
+verificar que las llaves esten corriendo para el cifrado:
+eval $(ssh-agent -s) 
+
+agregar la llave: 
+ssh-add ~/.ssh/id_rsa
 
