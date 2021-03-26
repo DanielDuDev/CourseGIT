@@ -22,3 +22,8 @@ push url (enviar al servidor remoto)
 fetch (del repositorio remoto al local, no lo lleva al directorio de trabajo, en mis archivos)
 merge (fusionar con mis archivos)
 pull (fusiona fetch y merge) 
+
+commit -am "mensaje" (hace add y commit al mismo tiempo)
+
+branch (nombre de la nueva rama) (crea una nueva rama) 
+checkout (nombre de la rama) (cambia a la nueva rama) [IMPORTANTE, RECORDAR QUE SE DEBE HACER COMMINT EN LA NUEVA RAMA ANTES DE REGRESAR A LA RAMA MASTER]
