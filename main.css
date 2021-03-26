@@ -3,3 +3,14 @@ body {
   text-align: center;
   font-family: "Arial";
 }
+
+.list-style {
+  color: cornflowerblue;
+  text-align: start;
+  font-size: 1em;
+  font-family: serif;
+}
+
+.subtitle-style{
+    color: darkmagenta;
+}

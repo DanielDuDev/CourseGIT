@@ -18,3 +18,7 @@ reset (id) --hard(vuelve a ese commit y borra el resto), --soft (vuelve y no bor
 log --stat (permite ver los cambios específicos) (q para salir)
 checkout (id) his (archivo)
 checkout (master) his (archivo) para volver al actual
+push url (enviar al servidor remoto)
+fetch (del repositorio remoto al local, no lo lleva al directorio de trabajo, en mis archivos)
+merge (fusionar con mis archivos)
+pull (fusiona fetch y merge) 
