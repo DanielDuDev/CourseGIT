@@ -16,3 +16,5 @@ show
 diff (id1) (id2) 
 reset (id) --hard(vuelve a ese commit y borra el resto), --soft (vuelve y no borra) (para volver a un estado anterior )
 log --stat (permite ver los cambios específicos) (q para salir)
+checkout (id) his (archivo)
+checkout (master) his (archivo) para volver al actual
