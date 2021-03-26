@@ -8,9 +8,13 @@ body {
   color: cornflowerblue;
   text-align: start;
   font-size: 1em;
-  font-family: serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.subtitle-style{
-    color: darkmagenta;
+.subtitle-style {
+  color: darkmagenta;
+}
+
+.form {
+  border: 1em solid brown;
 }
