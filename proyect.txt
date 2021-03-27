@@ -22,6 +22,7 @@ reset (id) --hard(vuelve a ese commit y borra el resto), --soft (vuelve y no bor
 ####log
 log --stat (permite ver los cambios específicos) (q para salir)
 log --all --graph --decorate --oneline
+log --online
 
 ####fetch
 fetch (del repositorio remoto al local, no lo lleva al directorio de trabajo, en mis archivos)
@@ -84,6 +85,11 @@ git stash pop (volver)
 git stash branch "nombre de la nueva rama" (poner el cambio en una nueva rama) 
 git stah drop (borrar los stash)
 
+
+#### clean 
+
+#### cherry-pick (traerse un commit específico de otra rama)
+cherry-pick(id del commit que me interesa)
 ___________________________________________________________
 
 
