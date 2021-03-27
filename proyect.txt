@@ -65,6 +65,11 @@ tag -a v0.1 -m "mensaje"
 git show-ref --tags 
 tag -d (el tag a eliminar)
 
+#### clone 
+clone url 
+
+___________________________________________________________
+
 
 ####crear llave SSH: 
 ssh-keygen -t rsa -b 4096 -C "danydu1299@gmail.com"
