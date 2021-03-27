@@ -91,6 +91,15 @@ git stah drop (borrar los stash)
 #### cherry-pick (traerse un commit específico de otra rama)
 cherry-pick(id del commit que me interesa)
 cherry-pick --skip (para salirse en caso de no saber resolver un conflicto, los conflitos se generan cuando chocan dos partes que estan en ambas ramas)
+
+#### COMANDO PARA ERRORES ####
+
+#### amend (borrar commits, pegar los cambios que realmente quiero al commit anterior que es el que no quiero) ¡Bendito!
+
+el flujo estricto es (el commit que quiero "borrar" obviamente ya está hecho): 
+1) git add 
+2) git commit --amend 
+
 ___________________________________________________________
 
 
