@@ -56,6 +56,11 @@ remote set-url (link ssh)
 pull (fusiona fetch y merge)
 pull origin master (trae del repositorio remoto tanto a mis propios archivos como a mi repositorio local)
 
+Esto es para traer los cambios de un respositorio distinto. Normlamente usado para actualizar el repositorio de un fork de github
+#### Upstream (palabra opcional, comunmente usada)
+git remote add upstream url 
+git pull upstream
+
 ####push
 push origin master (envía todo al respositorio remoto)
 push url (enviar al servidor remoto)
@@ -67,6 +72,17 @@ tag -d (el tag a eliminar)
 
 #### clone 
 clone url 
+
+
+#### rebase (unir dos ramas salvajemente, parecido a merge)(hacer una rama anónima o silenciosa) (se ajusta) 
+1) git rebase (a la otra rama)
+2) git rebase (a la rama principal) 
+
+#### stash (moverse a otra rama sin hacer commit en la rama actual, y que no se pierdan los cambios)
+git stash 
+git stash pop (volver)
+git stash branch "nombre de la nueva rama" (poner el cambio en una nueva rama) 
+git stah drop (borrar los stash)
 
 ___________________________________________________________
 
