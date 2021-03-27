@@ -100,6 +100,12 @@ el flujo estricto es (el commit que quiero "borrar" obviamente ya está hecho):
 1) git add 
 2) git commit --amend 
 
+#### Reflog (muestra el historial de absolutamente todo)
+
+
+#### reset (vuelve a un estado anterior, siempre hard, nunca soft)
+
+
 ___________________________________________________________
 
 
